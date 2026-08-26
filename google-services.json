@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "853405935607",
+    "project_id": "comeet-3b8e7",
+    "storage_bucket": "comeet-3b8e7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853405935607:android:27cf3370a47a9de4d4b0f2",
+        "android_client_info": {
+          "package_name": "com.aistudio.comeet.social"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDRVPamEU9pKEYE7lpkxJGpLnnvvIU8Sg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal & Compliance Portal - CoMeet Live Video & Social</title>
+  <meta name="description" content="Official Legal, Privacy Policy, Terms of Service, and Account Deletion Center for CoMeet." />
+  <style>
+    :root {
+      --bg-dark: #0D0E15;
+      --card-bg: #171926;
+      --card-border: #2B2F45;
+      --primary-pink: #FF2E93;
+      --primary-purple: #9D4EDD;
+      --secondary-cyan: #06B6D4;
+      --accent-green: #10B981;
+      --accent-red: #EF4444;
+      --text-main: #FFFFFF;
+      --text-muted: #A0A5BD;
+      --text-dim: #646B8A;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: var(--bg-dark); color: var(--text-main); font-family: var(--font-family); line-height: 1.6; padding-bottom: 60px; }
+    header { background: rgba(23, 25, 38, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--card-border); position: sticky; top: 0; z-index: 100; }
+    .nav-container { max-width: 1000px; margin: 0 auto; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .brand-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text-main); font-weight: 800; font-size: 1.25rem; }
+    .brand-badge { background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple)); width: 34px; height: 34px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+    .nav-links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .nav-link { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; padding: 6px 12px; border-radius: 8px; }
+    .nav-link:hover { color: var(--text-main); background-color: rgba(255, 255, 255, 0.05); }
+    .nav-link.active { color: var(--primary-pink); background-color: rgba(255, 46, 147, 0.12); font-weight: 600; }
+    .container { max-width: 860px; margin: 40px auto; padding: 0 20px; }
+    .hero-card { background: linear-gradient(135deg, rgba(255, 46, 147, 0.15) 0%, rgba(157, 78, 221, 0.12) 100%); border: 1px solid rgba(255, 46, 147, 0.35); border-radius: 24px; padding: 40px 28px; margin-bottom: 36px; text-align: center; }
+    .hero-badge { display: inline-block; background: rgba(255, 46, 147, 0.2); color: var(--primary-pink); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 4px 12px; border-radius: 12px; margin-bottom: 12px; }
+    h1 { font-size: 2.3rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 12px; }
+    .hero-subtitle { color: var(--text-muted); font-size: 1.05rem; max-width: 620px; margin: 0 auto; }
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 36px; }
+    .portal-card { background-color: var(--card-bg); border: 1px solid var(--card-border); border-radius: 18px; padding: 26px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.25s ease; text-decoration: none; color: inherit; }
+    .portal-card:hover { border-color: var(--primary-pink); transform: translateY(-3px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35); }
+    .portal-card-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 16px; }
+    .icon-pink { background: rgba(255, 46, 147, 0.15); color: var(--primary-pink); }
+    .icon-purple { background: rgba(157, 78, 221, 0.15); color: #D8B4FE; }
+    .icon-red { background: rgba(239, 68, 68, 0.15); color: var(--accent-red); }
+    .portal-card h2 { font-size: 1.25rem; font-weight: 700; color: var(--text-main); margin-bottom: 8px; }
+    .portal-card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 18px; }
+    .card-cta { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: 0.9rem; color: var(--primary-pink); margin-top: auto; }
+    .info-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 24px; margin-bottom: 24px; }
+    .info-card h3 { font-size: 1.1rem; color: var(--text-main); margin-bottom: 10px; }
+    .info-card p { color: var(--text-muted); font-size: 0.92rem; margin-bottom: 8px; }
+    footer { border-top: 1px solid var(--card-border); padding: 30px 20px; margin-top: 60px; text-align: center; color: var(--text-dim); font-size: 0.85rem; }
+    .footer-links { display: flex; justify-content: center; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; }
+    .footer-links a:hover { color: var(--primary-pink); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-badge">📹</div>
+        <span>CoMeet</span>
+      </a>
+      <nav class="nav-links">
+        <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+        <a href="terms-of-service.html" class="nav-link">Terms of Service</a>
+        <a href="account-deletion.html" class="nav-link">Delete Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hero-card">
+      <span class="hero-badge">Compliance & Transparency</span>
+      <h1>Legal & Privacy Portal</h1>
+      <p class="hero-subtitle">Official policy documents and safety disclosures for the CoMeet Live Streaming & 1-to-1 Video Social Network.</p>
+    </div>
+
+    <div class="cards-grid">
+      <a href="privacy-policy.html" class="portal-card">
+        <div>
+          <div class="portal-card-icon icon-pink">🛡️</div>
+          <h2>Privacy Policy</h2>
+          <p>Learn how CoMeet collects, safeguards, and handles account information, camera/mic permissions, live streams, chat messages, and coins.</p>
+        </div>
+        <div class="card-cta">
+          <span>Read Privacy Policy</span>
+          <span>→</span>
+        </div>
+      </a>
+
+      <a href="terms-of-service.html" class="portal-card">
+        <div>
+          <div class="portal-card-icon icon-purple">⚖️</div>
+          <h2>Terms of Service</h2>
+          <p>Review community rules, Zero-Tolerance UGC guidelines, live broadcast host policies, virtual economy conditions, and user rights.</p>
+        </div>
+        <div class="card-cta" style="color: var(--primary-purple);">
+          <span>Read Terms of Service</span>
+          <span>→</span>
+        </div>
+      </a>
+
+      <a href="account-deletion.html" class="portal-card">
+        <div>
+          <div class="portal-card-icon icon-red">🗑️</div>
+          <h2>Account Deletion</h2>
+          <p>Submit an external data erasure request or review what data is permanently purged when deleting your CoMeet account.</p>
+        </div>
+        <div class="card-cta" style="color: var(--accent-red);">
+          <span>Open Deletion Form</span>
+          <span>→</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="info-card">
+      <h3>Google Play Store & Developer Guidelines Compliance</h3>
+      <p>CoMeet adheres strictly to Google Play User Data policies, including in-app camera and microphone disclosure, child safety restrictions (17+ rating), anti-fraud virtual economy controls, and publicly accessible account deletion URLs.</p>
+      <p>For questions or verification, contact: <code>privacy@comeet.social</code></p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <span>•</span>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <span>•</span>
+      <a href="account-deletion.html">Account Deletion</a>
+      <span>•</span>
+      <a href="index.html">Legal Portal Hub</a>
+    </div>
+    <p>&copy; 2026 CoMeet. All rights reserved. Built for Google Play Compliance.</p>
+  </footer>
+</body>
+</html>

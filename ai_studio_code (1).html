@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - CoMeet Live Video & Social</title>
+  <meta name="description" content="Privacy Policy and Data Practices for CoMeet - Live Streaming, 1-to-1 Video Calling, and Social Discovery." />
+  <style>
+    :root {
+      --bg-dark: #0D0E15;
+      --card-bg: #171926;
+      --card-border: #2B2F45;
+      --primary-pink: #FF2E93;
+      --primary-purple: #9D4EDD;
+      --secondary-cyan: #06B6D4;
+      --accent-green: #10B981;
+      --accent-red: #EF4444;
+      --text-main: #FFFFFF;
+      --text-muted: #A0A5BD;
+      --text-dim: #646B8A;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: var(--bg-dark); color: var(--text-main); font-family: var(--font-family); line-height: 1.6; -webkit-font-smoothing: antialiased; padding-bottom: 60px; }
+    header { background: linear-gradient(180deg, rgba(23, 25, 38, 0.95) 0%, rgba(13, 14, 21, 0.95) 100%); backdrop-filter: blur(12px); border-bottom: 1px solid var(--card-border); position: sticky; top: 0; z-index: 100; }
+    .nav-container { max-width: 1000px; margin: 0 auto; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .brand-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text-main); font-weight: 800; font-size: 1.25rem; letter-spacing: -0.5px; }
+    .brand-badge { background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple)); width: 34px; height: 34px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; box-shadow: 0 4px 12px rgba(255, 46, 147, 0.35); }
+    .nav-links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .nav-link { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; padding: 6px 12px; border-radius: 8px; transition: all 0.2s ease; }
+    .nav-link:hover { color: var(--text-main); background-color: rgba(255, 255, 255, 0.05); }
+    .nav-link.active { color: var(--primary-pink); background-color: rgba(255, 46, 147, 0.12); font-weight: 600; }
+    .container { max-width: 860px; margin: 40px auto; padding: 0 20px; }
+    .doc-header { background: linear-gradient(135deg, rgba(255, 46, 147, 0.15) 0%, rgba(157, 78, 221, 0.15) 100%); border: 1px solid rgba(255, 46, 147, 0.3); border-radius: 20px; padding: 32px 24px; margin-bottom: 32px; text-align: center; }
+    .doc-badge { display: inline-block; background: rgba(255, 46, 147, 0.2); color: var(--primary-pink); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 4px 12px; border-radius: 12px; margin-bottom: 12px; }
+    h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
+    .meta-text { color: var(--text-muted); font-size: 0.9rem; }
+    .quick-summary { background-color: var(--card-bg); border: 1px solid var(--card-border); border-left: 4px solid var(--primary-pink); border-radius: 12px; padding: 20px; margin-bottom: 32px; }
+    .quick-summary h3 { font-size: 1rem; color: var(--primary-pink); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .quick-summary ul { list-style-type: none; padding-left: 0; }
+    .quick-summary li { position: relative; padding-left: 20px; margin-bottom: 6px; font-size: 0.92rem; color: var(--text-muted); }
+    .quick-summary li::before { content: "✓"; position: absolute; left: 0; color: var(--accent-green); font-weight: bold; }
+    .section-card { background-color: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 28px; margin-bottom: 24px; }
+    .section-card h2 { font-size: 1.35rem; font-weight: 700; color: var(--text-main); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid var(--card-border); padding-bottom: 12px; }
+    .section-number { background: linear-gradient(135deg, var(--primary-pink), var(--primary-purple)); color: white; width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700; }
+    p { margin-bottom: 14px; font-size: 0.95rem; color: var(--text-muted); }
+    strong { color: var(--text-main); }
+    ul, ol { margin-left: 20px; margin-bottom: 16px; }
+    li { margin-bottom: 8px; font-size: 0.95rem; color: var(--text-muted); }
+    .data-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
+    .data-table th, .data-table td { padding: 12px 14px; border: 1px solid var(--card-border); text-align: left; }
+    .data-table th { background-color: rgba(255, 255, 255, 0.03); color: var(--text-main); font-weight: 600; }
+    .data-table td { color: var(--text-muted); }
+    .badge-perm { background: rgba(6, 182, 212, 0.15); color: var(--secondary-cyan); padding: 2px 8px; border-radius: 6px; font-family: monospace; font-size: 0.85rem; }
+    .badge-opt { background: rgba(16, 185, 129, 0.15); color: var(--accent-green); padding: 2px 8px; border-radius: 6px; font-size: 0.85rem; }
+    .badge-req { background: rgba(239, 68, 68, 0.15); color: var(--accent-red); padding: 2px 8px; border-radius: 6px; font-size: 0.85rem; }
+    .callout { background: rgba(255, 46, 147, 0.08); border: 1px solid rgba(255, 46, 147, 0.25); border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+    .callout-title { font-weight: 700; color: var(--primary-pink); margin-bottom: 6px; font-size: 0.95rem; display: flex; align-items: center; gap: 8px; }
+    footer { border-top: 1px solid var(--card-border); padding: 30px 20px; margin-top: 60px; text-align: center; color: var(--text-dim); font-size: 0.85rem; }
+    .footer-links { display: flex; justify-content: center; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; }
+    .footer-links a:hover { color: var(--primary-pink); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-badge">📹</div>
+        <span>CoMeet</span>
+      </a>
+      <nav class="nav-links">
+        <a href="privacy-policy.html" class="nav-link active">Privacy Policy</a>
+        <a href="terms-of-service.html" class="nav-link">Terms of Service</a>
+        <a href="account-deletion.html" class="nav-link">Delete Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="doc-header">
+      <span class="doc-badge">Official Policy</span>
+      <h1>Privacy Policy</h1>
+      <p class="meta-text">Application Package: <code>com.aistudio.comeet.social</code> • Effective Date: January 1, 2026 • Last Updated: August 27, 2026</p>
+    </div>
+
+    <div class="quick-summary">
+      <h3>Key Privacy Highlights</h3>
+      <ul>
+        <li><strong>Zero Data Sale:</strong> CoMeet never sells, rents, or monetizes personal data to third parties.</li>
+        <li><strong>Real-time Camera/Mic Processing:</strong> Video and audio feeds are streamed in real time and are not recorded without user consent.</li>
+        <li><strong>Google Play In-App Billing:</strong> Payment info is handled by Google Play; CoMeet never stores credit cards.</li>
+        <li><strong>Account & Data Deletion:</strong> Full account wipe is available anytime in-app and via our web portal.</li>
+      </ul>
+    </div>
+
+    <article class="section-card">
+      <h2><span class="section-number">1</span> Introduction & Overview</h2>
+      <p>Welcome to <strong>CoMeet</strong> ("we", "our", or "us"). CoMeet is a real-time live streaming, 1-to-1 video interaction, and social discovery platform. This Privacy Policy explains our practices regarding the collection, use, disclosure, and protection of information obtained through the CoMeet Android application (<code>com.aistudio.comeet.social</code>) and related online services.</p>
+      <p>By downloading, registering for, or using CoMeet, you agree to the collection and handling of your data as outlined in this Privacy Policy. If you do not agree with any part of this policy, you must discontinue using CoMeet immediately.</p>
+    </article>
+
+    <article class="section-card">
+      <h2><span class="section-number">2</span> Information We Collect</h2>
+      <p>We collect information to provide, maintain, optimize, and protect our video calling and social services.</p>
+      
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Data Category</th>
+            <th>Specific Data Points</th>
+            <th>Purpose</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Account & Profile</strong></td>
+            <td>Email address, username, display name, profile avatar photo, bio description, date of birth.</td>
+            <td>User authentication, age verification (17+ compliance), profile rendering.</td>
+            <td><span class="badge-req">Required</span></td>
+          </tr>
+          <tr>
+            <td><strong>Hardware & Media</strong></td>
+            <td>Real-time camera frames, microphone audio samples, selected gallery photos.</td>
+            <td>Live video streaming, 1-to-1 video calling, profile image uploads.</td>
+            <td><span class="badge-req">Runtime Opt-in</span></td>
+          </tr>
+          <tr>
+            <td><strong>Social & Messages</strong></td>
+            <td>Direct chat messages, room comments, likes, virtual gifts, followed creators, block lists.</td>
+            <td>In-app communication, stream interaction, social feed, user moderation.</td>
+            <td><span class="badge-opt">User Created</span></td>
+          </tr>
+          <tr>
+            <td><strong>Virtual Economy</strong></td>
+            <td>Virtual coin balances, diamond earnings, gift transaction logs, Google Play purchase tokens.</td>
+            <td>In-app virtual gift processing, host earnings accounting, fraud prevention.</td>
+            <td><span class="badge-opt">Financial/Transactional</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <article class="section-card">
+      <h2><span class="section-number">3</span> Device Permissions & Hardware Usage</h2>
+      <p>CoMeet requests explicit runtime permissions in accordance with Android security best practices. Each permission is requested dynamically only when required:</p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Android Permission</th>
+            <th>Usage Context</th>
+            <th>Mandatory?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="badge-perm">android.permission.CAMERA</span></td>
+            <td>Capturing video for live broadcasts and 1-to-1 video calls. Camera preview shuts down immediately upon call exit.</td>
+            <td>Required for Video Features</td>
+          </tr>
+          <tr>
+            <td><span class="badge-perm">android.permission.RECORD_AUDIO</span></td>
+            <td>Transmitting microphone audio during live rooms and video calls. Audio stream stops immediately upon room closure.</td>
+            <td>Required for Voice Features</td>
+          </tr>
+          <tr>
+            <td><span class="badge-perm">android.permission.POST_NOTIFICATIONS</span></td>
+            <td>Sending push alerts for incoming video calls, chat messages, and live notifications (Android 13+).</td>
+            <td>Optional</td>
+          </tr>
+          <tr>
+            <td><span class="badge-perm">android.permission.READ_MEDIA_IMAGES</span></td>
+            <td>Allowing users to select and crop a profile avatar from device photos.</td>
+            <td>Optional</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <article class="section-card">
+      <h2><span class="section-number">4</span> Data Retention & Account Deletion</h2>
+      <p>We retain your personal data only as long as your account remains active. You maintain full rights to delete your data at any time:</p>
+      <ul>
+        <li><strong>In-App Self Service:</strong> Open <em>Profile → Settings → Account Settings → Delete Account</em> to permanently erase your profile immediately.</li>
+        <li><strong>Web Deletion Portal:</strong> Submit an account erasure request on our dedicated <a href="account-deletion.html" style="color: var(--primary-pink);">Account Deletion Web Portal</a>.</li>
+      </ul>
+      <p>Upon deletion, all profile data, direct messages, followers, and coin balances are permanently purged from active production databases.</p>
+    </article>
+
+    <article class="section-card">
+      <h2><span class="section-number">5</span> Contact Us</h2>
+      <p>For questions or requests concerning your privacy, contact our Data Protection Officer:</p>
+      <ul>
+        <li><strong>Email:</strong> <code>privacy@comeet.social</code></li>
+        <li><strong>Support Desk:</strong> <code>support@comeet.social</code></li>
+        <li><strong>App:</strong> CoMeet (Package: <code>com.aistudio.comeet.social</code>)</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <span>•</span>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <span>•</span>
+      <a href="account-deletion.html">Account Deletion</a>
+      <span>•</span>
+      <a href="index.html">Legal Portal Hub</a>
+    </div>
+    <p>&copy; 2026 CoMeet. All rights reserved.</p>
+  </footer>
+</body>
+</html>
